@@ -12,7 +12,7 @@
     "start": "node ./dist/index.js"
   },
   "engines": {
-    "node": "20.6.1"
+    "node": "18.16.1"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.3",
