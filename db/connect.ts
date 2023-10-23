@@ -9,15 +9,15 @@ async function connectDB() {
   try {
     await mongoose.connect(process.env.MONGODB_URL)
     console.log("Conexión exitosa con Mongo DB")
-    // await resetDB()
-    // await createUser({
-    //   firstname: "Martín",
-    //   lastname: "Gesualdo",
-    //   email: "",
-    //   login_code: "123456",
-    //   image_url: "https://www.google.com",
-    //   roles: { admin: true, seller: true },
-    // })
+    await resetDB()
+    await createUser({
+      firstname: "Elvix",
+      lastname: "Marrugo",
+      email: "",
+      login_code: "123456",
+      image_url: "https://www.google.com",
+      roles: { admin: true, seller: true },
+    })
   } catch (error) {
     console.log("Hubo un error al conectarnos a la BBDD", error)
   }
